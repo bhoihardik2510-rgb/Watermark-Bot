@@ -44,7 +44,7 @@ async def handle_force_subscribe(bot, cmd):
         await bot.send_message(
             chat_id=cmd.from_user.id,
             text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
-            parse_mode=enums.ParseMode.HTML
+            parse_mode=enums.ParseMode.HTML,
             disable_web_page_preview=True
         )
         return 400
